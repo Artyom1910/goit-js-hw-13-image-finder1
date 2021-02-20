@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Image finder</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <article class="intro">
+      <form class="search-form js-search-form">
+        <div class="form-group">
+          <label for="searchQuery"></label>
+
+          <input
+            type="text"
+            class="form-control"
+            name="query"
+            id="searchQuery"
+            placeholder=" Search images..."
+            autocomplete="off"
+          />
+          <i class="material-icons search-icon">search</i>
+        </div>
+      </form>
+    </article>
+    <article class="sentinel">
+      <p class="is-hidden notification">
+        Results for <span id="js-search-notification"></span>
+      </p>
+      <div class="gallery-container"></div>
+    </article>
+
+    <div class="spinner is-hidden"></div>
+  </body>
+</html>
